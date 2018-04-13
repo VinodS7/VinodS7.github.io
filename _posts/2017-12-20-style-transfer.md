@@ -1,16 +1,23 @@
 ---
 layout: post
-title: "Neural Style Transfer for Musical Melodies"
-date: 2018-01-08
-author: "Ashis Pati"
+title: "Common Audio Extraction from Noisy Concert Recordings"
+date: 2018-04-012
+author: "Vinod Subramanian"
 affiliation:   <a href="http://www.musicinformatics.gatech.edu" target="_blank">Music Informatics Group</a>, <a href="http://www.gtcmt.gatech.edu" target="_blank">GTCMT</a>
-excerpt: "Towards developing deep learning paradigms for style transfer in music data"
-tags: [style transfer, deep learning, genre fusion, music generation, machine learning]
+excerpt: "Developing a non-negative matrix algorithm to separate music from crowd noises"
+tags: [Non-negative matrix factorization, machine learning, crowd sourcing]
 comments: true
 ---
 
-## What is Style Transfer?
-Over the last decade, Deep Neural Networks (DNNs) have rapidly emerged as the state-of-the-art for several AI (Artificial Intelligence) tasks e.g., [image classification](https://tryolabs.com/blog/2017/08/30/object-detection-an-overview-in-the-age-of-deep-learning/){:target="_blank"}, [speech recognition](https://www.microsoft.com/en-us/research/blog/microsoft-researchers-achieve-new-conversational-speech-recognition-milestone/?ranMID=24542&ranEAID=TnL5HPStwNw&ranSiteID=TnL5HPStwNw-dznn3rJwEuIRwMyV.2iRxQ&tduid=(b95f77f24f3a8dd7498a8216d45ed861)(256)){:target="_blank"}, and even [playing games](https://www.theverge.com/2017/10/18/16495548/deepmind-ai-go-alphago-zero-self-taught){:target="_blank"}.  As researchers tried to demystify the success of these DNNs in the image classification domain by developing visualization tools (e.g. [Deep Dream](https://research.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html){:target="_blank"}, [Filters](http://cs231n.github.io/understanding-cnn/){:target="_blank"}) which help us understand “what” exactly is a DNN model “learning”, an interesting application emerged which made it possible to extract the “style” of one image and apply it to another image with different “content”. This was termed as “[Image Style Transfer](https://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Gatys_Image_Style_Transfer_CVPR_2016_paper.html){:target="_blank"}”.
+## Introduction
+With the increasing popularity of hand held devices with the capacity to record audio and video there is a whole amount of audio and video data available that has immense potential for use in research and real world applications. Crowd sourcing is the concept of presenting a problem to a a large group of people and trying to utilize the best combination of the solutions received from this large group \cite{howe2006rise}. Crowd sourcing has been used before for creative design and creating online databases \cite{Brabham2011}.
+
+Crowd sourcing has seen applications in audio where audience contributed recorings were used for reconstructing concerts  \cite{Shrstha:2007:SMV:1291233.1291367}, \cite{kennedy2009less}. However, crowd sourcing for recreating live events needs a way to ensure common audio quality throughout the constructed recording because sudden changes in the bandwidth, distortion etc. while listening to an audio file are undesirable. This is where common audio extraction is important. The main challenge of common audio extraction is that it needs to ensure that the audio extracted is of better or comparable quality to the best recording available in the mixture.
+
+The problem that this paper addresses is generating a good quality recording of a concert after crowd sourcing various audience recordings of that particular concert, here the measurement of how 'good' a recording is done using the signal to distortion ratio (SDR). The most obvious solution to this problem is to identify the best recording from the recordings provided by the users. The main drawback with this solution is it assumes that there is at least one good quality recording, if all the recordings are of inferior quality this approach is not very useful. The aim of the algorithm introduced in this paper is to generate a recording that is of decent quality even if the audience contributed recordings are of poor quality.
+
+To solve the problem described a modified version of non-negative matrix factorization (NMF) is used to separate the noise from the music. The paper is structured as follows: Section 2 describes the related work in this area. Section 3 describes the algorithm used in this research. Section 4 describes the evaluation procedure and the results. Finally, section 5 draws conclusions from the results and provides suggestions for future work.
+”.
 
 <center>
 <figure>
