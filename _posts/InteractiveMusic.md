@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: page
 title: "Procedurally Drawn Music"
-date: 2018-01-02
+date: 2018-04-14
 author: "Vinod Subramanian"
 affiliation:   <a href="http://www.musicinformatics.gatech.edu" target="_blank">Music Informatics Group</a>, <a href="http://www.gtcmt.gatech.edu" target="_blank">GTCMT</a>
 excerpt: "Composing music by generating geometrical images"
