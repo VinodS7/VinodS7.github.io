@@ -22,7 +22,7 @@ Rowe’s definition focuses on using only audio input however I think a system c
 <center>
 <figure>
 	<img src="../assets/img/InteractiveMusic/ArtikulationScore.jpg" style="width:70%;height:auto;">
-	<figcaption>Left: Content Image, Middle: Style Image, Right: Content + Style, image source: <a href="https://blogthehum.wordpress.com/2016/04/05/gyorgy-ligetis-artikulation-with-score-and-audio/" target="_blank">Google Research Blog</a></figcaption>
+	<figcaption>Left: Content Image, Middle: Style Image, Right: Content + Style, image source: <a href="https://blogthehum.wordpress.com/2016/04/05/gyorgy-ligetis-artikulation-with-score-and-audio/" target="_blank">Link</a></figcaption>
 </figure>
 </center>
 
